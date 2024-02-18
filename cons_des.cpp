@@ -33,3 +33,6 @@ void displayPrivate(Student s){
 
 int main() {
     Student student("Chandaka.Sai Bhaskar",532,9.39,"MAHARAJ VIJAYARAM COLLEGE OF ENGINEERING",33);
+ displayPrivate(student);
+}
+
