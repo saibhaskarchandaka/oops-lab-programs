@@ -22,9 +22,15 @@ class AccessSpecifierDemo
     }
 };
 int main()
-{
+{   int priValue;int proValue;int pubValue;
     AccessSpecifierDemo obj;
-    obj.setVar(10,20,30);
+    cout<<"Enter the private variable:"<<endl;
+    cin>>priValue;
+    cout<<"Enter the Protected variable:"<<endl;
+    cin>>proValue;
+    cout<<"Enter the Public variable:"<<endl;
+    cin>>pubValue;
+    obj.setVar(priValue,proValue,pubValue);
     obj.getvar();
 
 }
