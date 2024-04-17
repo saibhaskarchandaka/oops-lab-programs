@@ -1,31 +1,23 @@
+import java.util.*;
 abstract class Animal { 
-
-           Animal(String name) 
-           { 
-                this.name = name; 
-            } 
-
 	public abstract void makeSound(); 
-
-	public String getName()
-           {
-               return name; 
-            }
- 
      } 
 
 
 class Dog extends Animal { 
-	public Dog(String name) 
-            { 
-                   super(name); 
-             } 
+
 
 	public void makeSound() 
 	{ 
-		System.out.println(getName() + " barks"); 
+		System.out.println("Dog - barks"); 
 	} 
 } 
+class Cat extends Animal{
+    public void makeSound()
+    {
+        System.out.println("Cat - meows");
+    }
+}
 
 
 
@@ -33,10 +25,9 @@ public class PartialAbstraction {
 	
 	public static void main(String[] args) 
 	{ 
-		Animal puppy = new Dog("Buddy"); 
-		
-
-		puppy..makeSound(); 
-		 
+		Animal puppy = new Dog(); 
+		Animal kittens = new Cat();
+		puppy.makeSound(); 
+		kittens.makeSound();
 	} 
 }
